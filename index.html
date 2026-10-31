@@ -230,7 +230,6 @@ footer{padding:52px 0 40px;border-top:2px solid var(--line)}
   .flow{grid-template-columns:repeat(5,1fr);gap:0;padding:52px 0 8px;--l0:10%;--l1:30%;--l2:50%;--l3:70%;--l4:90%;--t0:26px;--t1:26px;--t2:26px;--t3:26px;--t4:26px}
   .flow .track{left:10%;right:10%;top:25px;bottom:auto;width:auto;height:2px;background:repeating-linear-gradient(90deg,var(--line2) 0 6px,transparent 6px 10px)}
   .flow .st{grid-column:auto;margin:6px 6px 4px;text-align:center}
-  .hero-grid{grid-template-columns:1.1fr .9fr}
   .foot{grid-template-columns:1fr auto;align-items:end}
 }
 @media (min-width:900px){.minis{grid-template-columns:1fr 1fr 1fr}}
@@ -362,20 +361,9 @@ footer{padding:52px 0 40px;border-top:2px solid var(--line)}
         <a class="verify" href="https://learn.microsoft.com/api/credentials/share/en-us/alirofan-4153/85439E8D0331BEC4?sharingId=F1452B2D6B589564" target="_blank" rel="noopener"><span class="sp" data-sprite="cert" data-px="2" aria-hidden="true"></span><span>Microsoft Certified: Intelligent Applications Builder Associate (AB-410) · <em>VERIFY</em></span></a>
         <div class="cta">
           <a class="btn" href="#work">See the work</a>
-          <a class="btn alt" href="#">Résumé</a>
         </div>
       </div>
 
-      <div class="scene px" role="img" aria-label="Animated pixel illustration: an exam envelope rides a conveyor, is barcode-scanned, and is marked delivered">
-        <div class="lbl" aria-hidden="true"><span class="s1">READY FOR PICKUP</span><span class="s2">SCANNED · OUT FOR DELIVERY</span><span class="s3">DELIVERED · RECEIPT SENT</span></div>
-        <span class="sp rcpt" data-sprite="mail" data-px="2" aria-hidden="true"></span>
-        <div class="gate" aria-hidden="true"></div>
-        <span class="sp env" data-sprite="env" data-px="2" aria-hidden="true"></span>
-        <span class="sp chk" data-sprite="chk" data-px="2" aria-hidden="true"></span>
-        <div class="pips" aria-hidden="true"><b></b><b></b><b></b><b></b></div>
-        <span class="bot scan" data-bot aria-hidden="true"></span>
-        <div class="belt" aria-hidden="true"></div>
-      </div>
     </div>
 
     <ul class="stats" aria-label="Key numbers">
@@ -399,7 +387,7 @@ footer{padding:52px 0 40px;border-top:2px solid var(--line)}
           <svg class="ic-play" viewBox="0 0 14 14" shape-rendering="crispEdges"><path fill="currentColor" d="M3 1h2v2h2v2h2v2h2v2h-2v2H7v2H5v2H3z"/></svg>
           <svg class="ic-pause" viewBox="0 0 14 14" shape-rendering="crispEdges"><path fill="currentColor" d="M2 1h4v12H2zM8 1h4v12H8z"/></svg>
         </button>
-        <div class="bar" id="bar"><div class="rail"></div><div class="fill" id="fill"></div><span class="ph" id="ph" aria-hidden="true"></span></div>
+        <div class="bar" id="bar"><div class="rail"></div><div class="fill" id="fill"></div></div>
       </div>
     </div>
     <p class="film-note">Plays once when it scrolls into view. Click a chapter marker to jump; press play to loop.</p>
@@ -462,7 +450,6 @@ footer{padding:52px 0 40px;border-top:2px solid var(--line)}
         <h3>One record, five states</h3>
         <div class="flow" aria-label="Seating status flow: Ready To Write, Completed, Ready for Pickup, Out for Delivery, Delivered">
           <div class="track" aria-hidden="true"></div>
-          <span class="sp cart" data-sprite="envs" data-px="2" aria-hidden="true"></span>
           <div class="st" style="--c:var(--mute);--i:0">READY TO WRITE<em>Seated by the exam centre</em></div>
           <div class="st" style="--c:var(--pink);--i:1">COMPLETED<em>Student card scanned out</em></div>
           <div class="st" style="--c:var(--cyan);--i:2">READY FOR PICKUP<em>Reconciled at the site</em></div>
@@ -614,11 +601,9 @@ footer{padding:52px 0 40px;border-top:2px solid var(--line)}
       <h2>Let's talk about your clunkiest process.</h2>
       <div class="links">
         <a href="mailto:alirofan@gmail.com">alirofan@gmail.com</a>
-        <a href="#">LinkedIn</a>
-        <a href="#">Résumé</a>
       </div>
     </div>
-    <small>Built with <span class="sp" data-sprite="heart" data-px="2" aria-label="love"></span> and pixels · Ottawa → Toronto <span class="bot small" data-bot aria-hidden="true"></span></small>
+    <small>Built with <span class="sp" data-sprite="heart" data-px="2" aria-label="love"></span> and pixels · Ottawa → Toronto</small>
   </div>
 </footer>
 
@@ -678,28 +663,7 @@ function botSVG(){var id='tr'+(++botN);
   +u(5,16,18,12,D)+u(6,17,16,10,C)+u(9,19,10,6,K)+u(10,20,8,1,A)+u(10,22,5,1,Sg)
   +'<g class="arm arm-l">'+u(2,17,3,9,D)+u(1,26,5,3,Sg)+'</g><g class="arm arm-r">'+u(23,17,3,9,D)+u(22,26,5,3,Sg)+u(27,23,2,4,A,'thumb')+'</g>'
   +u(4,29,20,6,L)+u(3,30,1,4,L)+u(24,30,1,4,L)+'<g clip-path="url(#'+id+')"><g class="tpat">'+tr+'</g></g></svg><span class="sign"></span>';}
-document.querySelectorAll('[data-bot]').forEach(function(b){b.innerHTML=botSVG();});
-var ph=document.getElementById('ph');if(ph)ph.innerHTML='<svg viewBox="0 0 8 6" width="16" height="12" shape-rendering="crispEdges"><rect x="3" y="0" width="2" height="1" fill="#ffb347"/><rect x="0" y="1" width="8" height="5" fill="#35e0ff"/><rect x="1" y="2" width="6" height="2" fill="#0b1b2b"/><rect x="2" y="3" width="1" height="1" fill="#ffb347"/><rect x="5" y="3" width="1" height="1" fill="#ffb347"/></svg>';
 
-/* heading delivery */
-(function(){
-  var targets=[];
-  document.querySelectorAll('.sec-h h2').forEach(function(h){var s=document.createElement('span');s.className='hd-txt';s.textContent=h.textContent;h.textContent='';h.appendChild(s);targets.push([h.parentNode,s]);});
-  document.querySelectorAll('.case h2>span').forEach(function(s){s.classList.add('hd-txt');targets.push([s.parentNode,s]);});
-  if(reduce||!('IntersectionObserver' in window))return;
-  function type(el,full,cb){var i=0,n=full.length,ms=Math.min(40,1300/n);el.classList.add('typing');var iv=setInterval(function(){i++;el.textContent=full.slice(0,i);if(i>=n){clearInterval(iv);el.classList.remove('typing');el.style.minWidth='';cb&&cb();}},ms);}
-  function deliver(c,s){var full=s.textContent;s.style.minWidth=s.offsetWidth+'px';s.textContent='';
-    var r=c.getBoundingClientRect(),room=r.left>=80,stopX=room?-64:0,from=-Math.min(260,r.left+70),tn=c.querySelector('.tiny');
-    if(tn&&!room)tn.style.opacity='0';
-    var b=document.createElement('span');b.className='bot carry roll';b.innerHTML=botSVG();b.style.top=Math.round((c.offsetHeight-72)/2)+'px';b.style.left='0';b.style.transform='translateX('+from+'px)';c.appendChild(b);
-    var leave=function(cb){b.classList.remove('place','thumbs');b.classList.add('roll');b.style.transform='translateX('+(c.offsetWidth+20)+'px)';b.style.opacity='0';if(tn)tn.style.opacity='';setTimeout(function(){b.remove();cb&&cb();},480);};
-    requestAnimationFrame(function(){requestAnimationFrame(function(){b.classList.add('go');b.style.transform='translateX('+stopX+'px)';
-      setTimeout(function(){b.classList.remove('roll');b.classList.add('place');
-        setTimeout(function(){ if(room){type(s,full,function(){b.classList.add('thumbs');setTimeout(leave,300);});} else {leave(function(){type(s,full);});} },260);
-      },460);});});}
-  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){io.unobserve(e.target);var t=targets.find(function(x){return x[0]===e.target;});if(t)deliver(t[0],t[1]);}});},{threshold:.5});
-  targets.forEach(function(t){io.observe(t[0]);});
-})();
 
 /* ---------- screenshot tours ---------- */
 (function(){
@@ -856,7 +820,7 @@ function seek(x){t=Math.max(0,Math.min(TOTAL,x));
   var ci=chapterAt(t);
   chapters.forEach(function(g,i){var s=CH[i].t,e=CH[i+1]?CH[i+1].t:TOTAL+1,o=0;if(t>=s&&t<e){o=Math.min(1,(t-s)/.4);if(CH[i+1])o=Math.min(o,Math.max(0,(e-t)/.3));}if(t>=TOTAL&&i===CH.length-1)o=1;g.style.opacity=o;});
   var local=t-CH[ci].t,c=CH[ci];capt.textContent=c.n;capp.textContent=reduce?c.c:c.c.slice(0,Math.floor(local*26));
-  fill.style.transform='scaleX('+(t/TOTAL)+')';if(ph)ph.style.left=(t/TOTAL*100)+'%';ticks.forEach(function(b,i){b.classList.toggle('on',i===ci);});
+  fill.style.transform='scaleX('+(t/TOTAL)+')';ticks.forEach(function(b,i){b.classList.toggle('on',i===ci);});
   if(ci===6){var k=function(st,d){return Math.max(0,Math.min(1,(local-st)/d));};var e1=1-Math.pow(1-k(.8,1.6),3),e2=1-Math.pow(1-k(2.2,1.4),3);
     n1.textContent=fmt(1000*e1);n2.textContent='~'+Math.round(50*e2)+'%';}}
 function setBtn(){btn.setAttribute('aria-pressed',playing?'true':'false');btn.setAttribute('aria-label',playing?'Pause':'Play');}
